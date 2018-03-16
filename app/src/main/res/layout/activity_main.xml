@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.macosx.playwithyourvoice.MainActivity">
+
+  <EditText
+      android:id="@+id/edit_text"
+      android:hint="Type here"
+      android:layout_marginBottom="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="51sp"/>
+
+  <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:src="@drawable/speak"
+      android:background="@color/Invisible"
+      android:id="@+id/button_speak"
+      android:layout_gravity="center_horizontal"
+      android:enabled="true"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Tap to make it talk"
+      android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pitch"
+        android:layout_marginTop="60sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"/>
+
+  <SeekBar
+      android:id="@+id/seekbarpitch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:progress="50"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbarspeed"
+        android:layout_marginBottom="16dp"
+        android:progress="50"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="CHANGE LANGUAGE"
+      android:textAlignment="center"
+      android:layout_marginBottom="10sp"/>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnGermany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:src="@drawable/germany2"
+        android:text="Germany"
+        android:background="@color/Invisible" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFrance"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/france2"
+        android:background="@color/Invisible"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnItaly"
+        android:text="Italy"
+        android:src="@drawable/italy2"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Invisible"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEnglish"
+        android:text="English"
+        android:src="@drawable/unitedkingdom2"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Invisible"/>
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Tap the language you want, then tap the speak "
+      android:layout_gravity="center"/>
+
+
+</LinearLayout>
